@@ -13,7 +13,7 @@ function Main(props) {
 
     //function section
     const handleChange = function (event) {
-        let result = checkNames(usersList, event.target.value);
+        let result = checkNames(usersList, event.target.value.toUpperCase());
 
         setActualList(result);
     }

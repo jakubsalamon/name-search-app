@@ -18,12 +18,12 @@ export function dataPicker(array) {
 
 export function checkNames(usersList, filter) {
     const filteredArray = [];
-    if ((filter === "") || (filter === null)) {
+    if (!filter) {
         return usersList;
     }
     else {
         usersList.forEach(user => {
-            if (user.name.includes(filter)) {
+            if (user.name.toUpperCase().includes(filter)) {
                 filteredArray.push({
                     name: user.name,
                     username: user.username
