@@ -19,6 +19,7 @@ function Main(props) {
     }
 
     return (
+
         <div>
             <div>
                 <input type="text" onChange={handleChange} placeholder="Search by user name..." />
