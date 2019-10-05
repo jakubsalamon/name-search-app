@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
+import '../css/main.css';
 
-function Main() {
+function Main(props) {
+
+    const [usersList, setUserList] = useState(props.users);
+
     return (
-        <div>Hallo world</div>
+        <p>Hej</p>
     )
 }
 
-export default Main;
+export default Main
