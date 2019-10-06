@@ -11,13 +11,13 @@ export function getXhr() {
                     res(JSON.parse(xhr.response));
                     break;
                 case 204:
-
+                    console.error(xhr.status);
                     break;
                 case 304:
-
+                    console.error(xhr.status);
                     break;
                 case 404:
-
+                    console.error(xhr.status);
                     break;
                 default:
                     rej(xhr.status);

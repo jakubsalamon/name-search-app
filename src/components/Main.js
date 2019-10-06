@@ -18,9 +18,7 @@ function Main() {
 
     //function section
     const handleChange = function (event) {
-
         let result = checkNames(initialList, event.target.value.toUpperCase());
-
         setActualList(result);
     }
 
