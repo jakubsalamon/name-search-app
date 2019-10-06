@@ -1,20 +1,20 @@
-export function dataPicker(array = 0) {
+// export function dataPicker(array = 0) {
 
-    let myDataTable = [];
-    for (let i = 0; i < array.length; i++) {
+//     let myDataTable = [];
+//     for (let i = 0; i < array.length; i++) {
 
-        let singleUser = {
-            name: "",
-            username: ""
-        };
+//         let singleUser = {
+//             name: "",
+//             username: ""
+//         };
 
-        singleUser.name = array[i].name;
-        singleUser.username = array[i].username;
-        myDataTable.push(singleUser);
+//         singleUser.name = array[i].name;
+//         singleUser.username = array[i].username;
+//         myDataTable.push(singleUser);
 
-    }
-    return myDataTable;
-};
+//     }
+//     return myDataTable;
+// };
 
 export function checkNames(usersList, filter) {
     const filteredArray = [];
