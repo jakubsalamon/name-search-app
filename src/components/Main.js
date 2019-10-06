@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { checkNames } from '../service/helpers.js';
 import '../css/main.css';
 import { getXhr } from './../service/apiClient';
 
@@ -27,6 +26,24 @@ function Main() {
 
     const handleSubmit = function (event) {
         event.preventDefault();
+    }
+
+    const checkNames = function (usersList, filter) {
+        const filteredArray = [];
+        if (!filter) {
+            return usersList;
+        }
+        else {
+            usersList.forEach(user => {
+                if (user.name.toUpperCase().includes(filter)) {
+                    filteredArray.push({
+                        name: user.name,
+                        username: user.username
+                    });
+                }
+            })
+            return filteredArray;
+        }
     }
 
     return (
