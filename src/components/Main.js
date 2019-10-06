@@ -20,23 +20,26 @@ function Main(props) {
 
     return (
 
-        <div>
-            <div>
-                <input type="text" onChange={handleChange} placeholder="Search by user name..." />
+        <div className="container">
+            <div className="header">
+                <h1 className="header__text">Users list</h1>
             </div>
-            <table>
-                <tbody>
-                    {actualList.map(user => (
-                        <React.Fragment key={user.name}>
-                            <tr>
-                                <td>{listId++}.</td>
-                                <td>{user.name}</td>
-                                <td>@{user.username}</td>
-                            </tr>
-                        </React.Fragment>
-                    ))}
-                </tbody>
-            </table>
+            <form className="form">
+                <input className="form__input" type="text" onChange={handleChange} placeholder="Search by user name..." />
+                <table className="table">
+                    <tbody className="table__body">
+                        {actualList.map(user => (
+                            <React.Fragment key={user.name}>
+                                <tr className="table__row">
+                                    <td className="table__data--id">{listId++}.</td>
+                                    <td className="table__data--name">{user.name}</td>
+                                    <td className="table__data--username">@{user.username}</td>
+                                </tr>
+                            </React.Fragment>
+                        ))}
+                    </tbody>
+                </table>
+            </form>
         </div>
     )
 }
