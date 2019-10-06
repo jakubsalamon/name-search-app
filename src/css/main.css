@@ -1,16 +1,17 @@
+/* header section */
 .container {
     width: 800px;
-    margin: 50px auto 0 auto;
-    background-color: white;
+    margin: 60px auto 0 auto;
+    background-color: rgba(255, 255, 255, 0.7);
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    
 }
 .header {
     font-size: 40px;
     font-weight: 500;
     padding-top: 30px;
 }
+/* form with table section */
 .form {
     height: 60vh;
     min-height: 600px;
@@ -38,4 +39,24 @@
 }
 .table__data--grey {
     color: grey;
+}
+/* media querry section */
+@media all and (max-width: 766px) {
+    .container {
+        width: 300px;
+        margin: 20px auto 0 auto;
+    }
+    .form {
+        min-height: 550px;
+    }
+    .form__input {
+        font-size: 18px;
+        margin-top: 20px;
+        border: 1px solid black;
+        padding: 3px;
+    }
+    .table {
+        width: 300px;
+        font-size: 14px;
+    }
 }
