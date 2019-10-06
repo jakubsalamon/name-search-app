@@ -1,5 +1,3 @@
-
-
 export function getXhr() {
     let xhr = new XMLHttpRequest();
 
@@ -9,6 +7,3 @@ export function getXhr() {
 
     return JSON.parse(xhr.response);
 }
-
-
-
