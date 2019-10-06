@@ -1,0 +1,41 @@
+.container {
+    width: 800px;
+    margin: 50px auto 0 auto;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    
+}
+.header {
+    font-size: 40px;
+    font-weight: 500;
+    padding-top: 30px;
+}
+.form {
+    height: 60vh;
+    min-height: 600px;
+}
+.form__input {
+    font-size: 30px;
+    margin-top: 30px;
+    border: 2px solid black;
+    padding: 3px;
+}
+.form__input:focus {
+    outline: none;
+    box-shadow: 1px 1px 3px 0px black;
+}
+.table {
+    margin: 5% auto auto auto;
+    border-spacing: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    width: 500px;
+}
+.table__row {
+    text-align: left;
+    
+}
+.table__data--grey {
+    color: grey;
+}

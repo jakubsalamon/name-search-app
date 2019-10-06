@@ -22,18 +22,18 @@ function Main(props) {
 
         <div className="container">
             <div className="header">
-                <h1 className="header__text">Users list</h1>
+                <p className="header__text">Users list</p>
             </div>
             <form className="form">
                 <input className="form__input" type="text" onChange={handleChange} placeholder="Search by user name..." />
                 <table className="table">
-                    <tbody className="table__body">
+                    <tbody>
                         {actualList.map(user => (
                             <React.Fragment key={user.name}>
                                 <tr className="table__row">
-                                    <td className="table__data--id">{listId++}.</td>
-                                    <td className="table__data--name">{user.name}</td>
-                                    <td className="table__data--username">@{user.username}</td>
+                                    <td className="table__data--grey">{listId++}.</td>
+                                    <td>{user.name}</td>
+                                    <td className="table__data--grey">@{user.username}</td>
                                 </tr>
                             </React.Fragment>
                         ))}
