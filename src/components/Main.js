@@ -13,9 +13,14 @@ function Main(props) {
 
     //function section
     const handleChange = function (event) {
+
         let result = checkNames(usersList, event.target.value.toUpperCase());
 
         setActualList(result);
+    }
+
+    const handleSubmit = function (event) {
+        event.preventDefault();
     }
 
     return (
@@ -24,7 +29,7 @@ function Main(props) {
             <div className="header">
                 <p className="header__text">Users list</p>
             </div>
-            <form className="form">
+            <form className="form" onSubmit={handleSubmit}>
                 <input className="form__input" type="text" onChange={handleChange} placeholder="Search by user name..." />
                 <table className="table">
                     <tbody>
@@ -44,4 +49,4 @@ function Main(props) {
     )
 }
 
-export default Main 
+export default Main;

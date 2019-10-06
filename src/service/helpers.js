@@ -1,4 +1,4 @@
-export function dataPicker(array) {
+export function dataPicker(array = 0) {
 
     let myDataTable = [];
     for (let i = 0; i < array.length; i++) {
